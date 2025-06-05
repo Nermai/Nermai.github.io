@@ -1,97 +1,41 @@
-
-body, html {
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  background-color: #111;
+  font-family: 'Arial', sans-serif;
+  transition: background 0.3s, color 0.3s;
 }
-
-.hero {
-  background: url('assets/images/hero.jpg') no-repeat center center/cover;
-  height: 100vh;
-  position: relative;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
   text-align: center;
-  padding: 2rem;
-  box-sizing: border-box;
 }
-
-.hero-content .logo {
-  max-width: 100px;
-  margin-bottom: 1rem;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.buttons {
-  margin-top: 1.5rem;
-}
-
-.btn {
+nav a {
+  margin: 0 10px;
+  color: #33cc33;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  margin: 0 0.5rem;
   font-weight: bold;
 }
-
-.btn.dark {
-  background: #222;
-  color: #fff;
-}
-
-.btn.gold {
-  background: goldenrod;
-  color: #111;
-}
-
-.stats {
-  background: #222;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
-  font-weight: bold;
-}
-
-.section {
-  padding: 3rem 1.5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.dark-bg {
-  background: #1a1a1a;
-}
-
-.light-bg {
-  background: #333;
-}
-
-.text-block {
-  max-width: 700px;
-}
-
-footer {
+.hero {
   text-align: center;
-  background: #000;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #888;
+  padding: 100px 20px;
+  background: #111;
+  color: white;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #33cc33;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+[data-theme='light'] {
+  background-color: #ffffff;
+  color: #000000;
+}
+[data-theme='light'] header {
+  background-color: #f0f0f0;
+}
+[data-theme='light'] nav a {
+  color: #005500;
 }
